@@ -42,7 +42,16 @@
 </div>
 
  <script>
-        // your answer would go here
+    $(document).ready(function(){
+      $('#update-max-value').click(function(){
+        $('#rating-container').empty();
+        var newmax=$('#max-value').val();
+        for(i=0; i<newmax; i++){
+          $('#rating-container').append('<div class="rating-circle "></div>')
+        }
+        
+      });
+    });
  </script>
 </body>
 </html>
